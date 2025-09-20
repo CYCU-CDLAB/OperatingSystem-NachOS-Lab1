@@ -27,8 +27,14 @@ Tested environments:
 ```bash
 # Get into the directory if you are not in it
 cd nachos
-# Run the docker container with the source code mounted
+```
+
+Run the docker container with the source code mounted
+```bash
+# Windows / MacOS (x86)
 docker run --rm -v $(pwd):/nachos -it --platform=linux/amd64 nachos
+# MacOS (ARM)
+docker run --rm -v $(pwd):/nachos -it nachos
 ```
 
 ```bash
