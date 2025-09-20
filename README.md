@@ -35,9 +35,11 @@ Run the docker container with the source code mounted
 ```bash
 docker run --rm -v $(pwd):/nachos -it --platform=linux/amd64 nachos
 ```
-- MacOS (ARM)
 
-```docker run --rm -v $(pwd):/nachos -it nachos```
+- MacOS (ARM)
+```bash
+docker run --rm -v $(pwd):/nachos -it nachos
+```
 
 ```bash
 # Inside the container, you should be in the code/test directory
